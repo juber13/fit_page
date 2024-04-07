@@ -2,9 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "fit page",
-  "main": "index.js",
+  "main": "backend/index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node backend/index.js",
     "build": "npm install && npm install --prefix frontEnd && npm run build --prefix frontEnd"
 
   },
