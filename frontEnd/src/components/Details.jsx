@@ -7,7 +7,7 @@ const Details = () => {
     const [criteria, setCriteria] = useState([]);
     const [name, setName] = useState({});
     const fetchData = async () => {
-        const res = await fetch(`/api/v1/allList/${param.id}`)
+        const res = await fetch(`https://fit-page-ecdb.onrender.com/api/v1/allList/${param.id}`)
         const data = await res.json();
         if (data.success) {
             setName({ text: data.data.name, type: data.data.type })

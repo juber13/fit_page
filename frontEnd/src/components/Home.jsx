@@ -7,7 +7,7 @@ const Home = () => {
     const navigate = useNavigate();
     const fetchData = async () => {
         try {
-            const res = await fetch('/api/v1/allList');
+            const res = await fetch('https://fit-page-ecdb.onrender.com/api/v1/allList');
             const data = await res.json();
             if (data.success === true) {
                 setResult(data.data)
